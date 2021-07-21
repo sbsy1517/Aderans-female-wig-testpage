@@ -2,11 +2,11 @@
     position: relative
     word-spacing: 2px
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap')
+
 
 html,body
     // border: 1px solid #000
-    font-family: 'Roboto', sans-serif,'Noto Sans JP', sans-serif, 'Noto Serif JP', serif
+    font-family: 'Roboto', sans-serif,'Noto Sans TC', sans-serif, 'Noto Serif TC', serif
 
 @mixin center
     position: absolute
@@ -22,6 +22,10 @@ html,body
 
 @mixin xl
     @media (max-width: 1200px)
+        @content
+
+@mixin ipad-pro
+    @media (max-width: 1024px)
         @content
 @mixin lg
     @media (max-width: 992px)
@@ -54,7 +58,7 @@ a,ul,li
         .title
             h3
                 font-size: 40px
-                font-family: 'Noto Sans JP', sans-serif
+                font-family: 'Noto Sans TC', sans-serif
                 font-weight: bold
                 +lg
                     text-align: center
@@ -91,8 +95,8 @@ a,ul,li
             line-height: 2
             color: $color_grey
             white-space: pre-wrap
-            font-family: 'Roboto', sans-serif
-            font-weight: light
+            font-family: 'Roboto', sans-serif,'Noto Sans TC', sans-serif
+            font-weight: 300
             +lg
                 font-size: 20px
             +md
@@ -165,7 +169,8 @@ a,ul,li
                         background-color: #ffffffc6
                         font-size: 30px
                         letter-spacing: 5px          
-                        color: $color_grey   
+                        color: $color_grey  
+                        font-family:'Noto Sans TC', sans-serif 
                         +lg
                             font-size: 25px
                             padding: 10px 30px
@@ -189,6 +194,7 @@ a,ul,li
                         left: 0
                         bottom: 0
                         transition-duration: 0.3s  
+                        font-family: 'Noto Sans TC', sans-serif
                         +lg
                             background-color: #ffffffaf 
                             color: $color_dkGrey

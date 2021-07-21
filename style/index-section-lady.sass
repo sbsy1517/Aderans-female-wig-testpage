@@ -7,15 +7,22 @@ section.jumbotron
                 background-size: cover
                 background-position: left center
                 height: 85vh
-                min-height: 600px
-                max-height: 800px
+                min-height: 700px
+                max-height: 900px
+                +ipad-pro
+                    background-position: -190px center
             #img-one-pc
                 background-image: url(../source/default/fv/1.jpg)
             #img-two-pc
                 background-image: url(../source/default/fv/2.jpg)
             #img-three-pc
                 background-image: url(../source/default/fv/3.jpg)
-            
+            #img-four-pc
+                background-image: url(../source/default/fv/4.jpg)
+            #img-five-pc
+                background-image: url(../source/default/fv/5.jpg)
+            #img-six-pc
+                background-image: url(../source/default/fv/6.jpg)
             .position-absolute
                 right: 0
                 height: 85vh
@@ -27,16 +34,17 @@ section.jumbotron
                     line-height: 1.8
                     letter-spacing: 5px 
                     font-size: 40px
-                    font-family: 'Noto Serif JP', sans-serif
+                    font-family: 'Noto Serif TC', sans-serif
                     font-weight: bold
 section.jumbotron.d-lg-none
     .carousel-inner
         .carousel-item
             .img
-                height: 600px
+                height: 750px
                 min-height: auto
+                background-position: left 30px
                 +sm
-                    height: 400px
+                    height: 480px
                     
             #img-one-sp
                 background-image: url(../source/default/fv/1-sp.jpg)
@@ -44,6 +52,12 @@ section.jumbotron.d-lg-none
                 background-image: url(../source/default/fv/2-sp.jpg)
             #img-three-sp
                 background-image: url(../source/default/fv/3-sp.jpg)
+            #img-four-sp
+                background-image: url(../source/default/fv/4-sp.jpg)
+            #img-five-sp
+                background-image: url(../source/default/fv/5-sp.jpg)
+            #img-six-sp
+                background-image: url(../source/default/fv/6-sp.jpg)
             .position-absolute
                 background-color: #ffffff9e
                 min-height: auto
@@ -75,7 +89,7 @@ section#introduction
     h2
         margin-bottom: 20px  
         letter-spacing: 5px 
-        font-family: 'Noto Sans JP', sans-serif
+        font-family: 'Noto Sans TC', sans-serif
         font-weight: bold
         +lg
             font-size: 25px
@@ -154,10 +168,10 @@ section#introduction
                     
                     p
                         color: white
-                        font-weight: light
-                        font-family: 'Noto Sans JP', sans-serif
+                        font-weight: 300
+                        font-family: 'Noto Sans TC', sans-serif
                         font-size: 23px
-                        letter-spacing: 2px
+                        letter-spacing: 1px
                         line-height: 45px
                         margin-bottom: 0
                     +lg
@@ -217,7 +231,7 @@ section#questionAnswer
                     font-weight: 500
                     background-color: $color_bgGrey
                     color: $color_dkGrey
-                    font-family: 'Noto Sans JP', sans-serif
+                    font-family: 'Noto Sans TC', sans-serif
                     &:after
                         background-size: 30px
                         width: 30px
@@ -247,6 +261,7 @@ section#questionAnswer
                 line-height: 55px
                 color: $color_ltGrey
                 letter-spacing: 1px
+                font-family: 'Noto Sans TC', sans-serif
                 +md
                     padding: 30px 50px
                     font-size: 20px
@@ -301,7 +316,7 @@ section#customize
                 h3
                     font-size: 30px
                     font-weight: bold
-                    font-family: 'Noto Sans JP', sans-serif
+                    font-family: 'Noto Sans TC', sans-serif
 
                     
                     
@@ -310,7 +325,7 @@ section#customize
                     font-size: 22px
                     line-height: 40px
                     color: $color_grey
-                    font-family: 'Noto Sans JP', sans-serif
+                    font-family: 'Noto Sans TC', sans-serif
                     font-weight: 300
                 +lg
                     padding: 30px 0px 0px
@@ -337,7 +352,7 @@ footer
     margin-top: 150px
     background-color: #141414
     padding-top: 100px
-    font-family: 'Noto Sans JP', sans-serif
+    font-family: 'Noto Sans TC', sans-serif
     +lg
         padding-top: 80px
         margin-top: 100px
@@ -349,9 +364,11 @@ footer
             color: white
             letter-spacing: 1.1px
             font-size: 20px
+            font-family: 'Noto Sans TC', sans-serif
         a
             color: white
-            font-weight: light
+            font-weight: 300
+            font-family: 'Noto Sans TC', sans-serif
         ul
             padding-left: 0
         .footer_content
@@ -396,9 +413,10 @@ footer
                     h4
                         text-align: center
                         letter-spacing: 2px
+                        font-family: 'Noto Sans TC', sans-serif
                     a
                         text-align: center
-                        font-family: 'Noto Sans JP', sans-serif
+                        font-family: 'Noto Sans TC', sans-serif
                         font-weight: 300
                         &:hover
                             color: $hover_red
@@ -419,11 +437,14 @@ footer
                     background-color: #fff
                     margin: 40px 0
             .nav-map
+                h4
+                    font-family: 'Noto Sans TC', sans-serif
                 ul
                     li
                         a
                             padding: 5px 0px
                             display: block
+                            font-family: 'Noto Sans TC', sans-serif
                             &:hover
                                 color: $hover_red
                             
@@ -432,6 +453,7 @@ footer
                         text-align: left
                         font-size: 23px
                         letter-spacing: 2px
+                        
                     a
                         text-align: left
                         font-size: 19px
@@ -447,18 +469,22 @@ footer
                         font-size: 16px
 
             .store
+                h4
+                    font-family: 'Noto Sans TC', sans-serif
                 ul
                     li
                         a
                             color: white   
                             padding: 5px 0
                             display: block
+                            font-family: 'Noto Sans TC', sans-serif
                             &:hover
                                 color: $hover_red
                 +lg
                     h4
                         text-align: left
                         font-size: 23px
+                        
                     a
                         text-align: left
                         font-size: 19px
@@ -477,6 +503,9 @@ footer
         color: white
         padding: 120px 0 20px
         font-weight: 300
+        font-family: 'Noto Sans TC', sans-serif
+        +sm
+            font-size: 13px
 .reservation_btn
     position: fixed
     bottom: 60px
