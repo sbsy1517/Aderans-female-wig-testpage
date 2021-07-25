@@ -9,7 +9,7 @@
 
 $(window).resize(function(){
     x=$(window).width();
-    if(x>992){
+    if(x>1200){
       $('.mobile-menu').removeClass('open').addClass('d-none');
       $('.hamburger-menu').removeClass('animate');
     }else{
@@ -28,7 +28,7 @@ $(window).scroll(function(e){
     $(".fixed-top").removeClass("top");
   };
   x=$(window).width();
-  if(x>992){
+  if(x>1200){
     $(".fixed-top").removeClass("mobile-top")
   }else{
     $(".fixed-top").addClass("mobile-top")
